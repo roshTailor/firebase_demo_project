@@ -40,22 +40,6 @@ class _HomePageState extends State<HomePage> {
               placeholder: "Password",
             ),
             const SizedBox(height: 100),
-            // ElevatedButton(
-            //   onPressed: () => authInstance.authAnonymous(),
-            //   child: const Text("Anonymous authentication"),
-            // ),
-            // ElevatedButton(
-            //   onPressed: () => authInstance.authCreateUser(email: AppController.email.text, password: AppController.password.text),
-            //   child: const Text("Create new user"),
-            // ),
-            // ElevatedButton(
-            //   onPressed: () => authInstance.authSignInUser(email: AppController.email.text, password: AppController.password.text),
-            //   child: const Text("Sign in"),
-            // ),
-            // ElevatedButton(
-            //   onPressed: () => authInstance.authGoogle(),
-            //   child: const Text("Log in with Google"),
-            // ),
             newButton(
                 onPressed: () {
                   try {
@@ -85,7 +69,12 @@ class _HomePageState extends State<HomePage> {
                   authInstance.authGoogle();
                   Navigator.of(context).pushNamed("ProfilePage");
                 },
-                title: "Log in with Google")
+                title: "Log in with Google"),
+            newButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed("ProfilePage");
+                },
+                title: "Firebase collection")
           ],
         ),
       ),
