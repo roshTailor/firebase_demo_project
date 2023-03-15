@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_demo_project/screen/EditProfile.dart';
 import 'package:firebase_demo_project/screen/homePage.dart';
 import 'package:firebase_demo_project/screen/profilePage.dart';
+import 'package:firebase_demo_project/screen/updaterProfile.dart';
 import 'package:flutter/material.dart';
 
 Future<void> main() async {
@@ -14,7 +15,8 @@ Future<void> main() async {
       routes: {
         '/': (context) => const HomePage(),
         'ProfilePage': (context) => const ProfilePage(),
-        'edit':(context)=> EditProfile(),
+        'edit':(context)=> const EditProfile(),
+        'update':(context)=> const UpdateProfile(),
 
       },
     ),

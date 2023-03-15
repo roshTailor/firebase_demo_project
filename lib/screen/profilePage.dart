@@ -90,7 +90,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       return ListTile(
                         contentPadding:
                             const EdgeInsets.symmetric(horizontal: 0),
-                        onTap: () => Navigator.pushNamed(context,'edit',arguments: index),
+                        onTap: () => Navigator.pushNamed(context,'update',arguments: index),
                         title: Text("${AppController.userData[index]['name']}"),
                         subtitle:
                             Text("${AppController.userData[index]['age']}"),
